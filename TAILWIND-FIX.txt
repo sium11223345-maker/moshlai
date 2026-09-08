@@ -1,0 +1,5 @@
+The original project was missing Tailwind CSS v4's Vite plugin.
+This fixed package adds @tailwindcss/vite and updates vite.config.ts.
+After replacing the old project files, run:
+  npm install
+  npm run dev

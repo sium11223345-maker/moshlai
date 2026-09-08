@@ -1,0 +1,2 @@
+import type { SiteSettings } from '../lib/types'
+export default function About({ settings }: { settings: SiteSettings }) { return <main className="mx-auto max-w-4xl px-4 py-14 md:px-6"><div className="glass rounded-3xl p-8 md:p-12"><div className="text-sm font-bold uppercase tracking-[.2em] text-[#a75a42]">About us</div><h1 className="mt-2 text-4xl font-black text-[#7f1d1d]">{settings.about_title}</h1><p className="mt-6 whitespace-pre-line leading-8 text-[#5f4941]">{settings.about_text}</p></div></main> }

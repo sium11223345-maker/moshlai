@@ -1,0 +1,3 @@
+import { useEffect, useState } from 'react'
+import { supabase } from '../lib/supabase'
+export default function Account(){ const [email,setEmail]=useState(''); useEffect(()=>{supabase?.auth.getUser().then(({data})=>setEmail(data.user?.email||''))},[]); return <main className="mx-auto max-w-xl px-4 py-16"><div className="glass rounded-3xl p-8"><h1 className="text-3xl font-black text-[#7f1d1d]">My Account</h1><p className="mt-5 text-[#6a5149]">Logged in as</p><div className="mt-1 font-bold">{email}</div><p className="mt-6 text-sm text-[#7a665d]">For security, password changes are handled through your account email flow or by an authorized owner/admin.</p></div></main> }
