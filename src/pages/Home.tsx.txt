@@ -13,7 +13,20 @@ export default function Home({ products, settings, add, remove, qtyOf }: { produ
           <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm backdrop-blur"> <Star size={15} fill="currentColor"/> Premium spices for everyday cooking</div>
           <h1 className="text-5xl font-black leading-tight md:text-7xl">{settings.hero_title}</h1>
           <p className="mt-5 max-w-xl text-lg text-white/85 md:text-xl">{settings.hero_subtitle}</p>
-          <div className="mt-8 flex flex-wrap gap-3"><Link to="/products" className="btn-primary bg-[#7f1d1d] !text-white">Shop Products <ArrowRight className="ml-2 inline" size={17}/></Link><Link to="/about" className="rounded-xl border border-white/40 bg-white/10 px-5 py-3 font-bold backdrop-blur">About Moshlai</Link></div>
+          <div className="mt-8 flex flex-wrap gap-3">
+  <Link
+    to="/products"
+    className="inline-flex items-center rounded-xl bg-[#7f1d1d] px-5 py-3 font-bold text-white hover:bg-[#991b1b]"
+  >
+    Shop Products <ArrowRight className="ml-2" size={17} />
+  </Link>
+  <Link
+    to="/about"
+    className="rounded-xl border border-white/40 bg-white/10 px-5 py-3 font-bold text-white backdrop-blur"
+  >
+    About Moshlai
+  </Link>
+</div><ArrowRight className="ml-2 inline" size={17}/></Link><Link to="/about" className="rounded-xl border border-white/40 bg-white/10 px-5 py-3 font-bold backdrop-blur">About Moshlai</Link></div>
         </div>
       </div>
     </section>
